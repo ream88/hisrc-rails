@@ -11,7 +11,7 @@ describe HisrcRails::ResponsiveImageTagHelper do
   end
 
   def data(_1x, _2x)
-    { data: { :'1x' => _1x, :'2x' => _2x }}
+    { data: { '1x' => _1x, '2x' => _2x }}.with_indifferent_access
   end
 
 
@@ -36,6 +36,14 @@ describe HisrcRails::ResponsiveImageTagHelper do
       mock.expect(:image_tag, nil, ['http://placehold.it/100x100', data('http://placehold.it/200x200', 'http://placehold.it/400x400')])
       
       mock.responsive_image_tag("http://placehold.it/100x100", :'1x' => "http://placehold.it/200x200", :'2x' => "http://placehold.it/400x400")
+      mock.verify
+    end
+
+
+    it 'allows to explicity set the +x+ option using strings' do
+      mock.expect(:image_tag, nil, ['http://placehold.it/100x100', data('http://placehold.it/200x200', 'http://placehold.it/400x400')])
+      
+      mock.responsive_image_tag("http://placehold.it/100x100", '1x' => "http://placehold.it/200x200", '2x' => "http://placehold.it/400x400")
       mock.verify
     end
 
