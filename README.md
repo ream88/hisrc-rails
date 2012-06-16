@@ -33,20 +33,20 @@ For detailed information about available configuration options be sure to checko
 
 ## Usage
 
-`hisrc-rails` provides a nice little helper method to optimize your views: `responsive_image_tag`
+This gem provides a nice little helper method to optimize your views: `responsive_image_tag`
 
-`responsive_image_tag` accepts the same options as +image_tag+, and two additional options as well:
+`responsive_image_tag` accepts the same options as `image_tag`, and two additional options as well:
 
-* <tt>:'1x'</tt> - If no 1x option is provided, the +src+ is used.
-* <tt>:'2x'</tt> - If no 2x options is provided, "@2x" is added to the +src+. So "rails.png" becomes "rails@2x.png".
+* `:'1x'` - If no 1x option is provided, the `src` is used.
+* `:'2x'` - If no 2x options is provided, "@2x" is added to the `src`. So "rails.png" becomes "rails@2x.png".
 
 ## Examples
 ```ruby
 responsive_image_tag("rails.png")
-  # => <img src="/assets/rails.png" data-1x="/assets/rails.png" data-2x="/assets/rails@2x.png" />
+# => <img src="/assets/rails.png" data-1x="/assets/rails.png" data-2x="/assets/rails@2x.png" />
 
 responsive_image_tag("http://placehold.it/100x100", :'1x' => "http://placehold.it/200x200", :'2x' => "http://placehold.it/400x400")
-  # => <img src="http://placehold.it/100x100" data-1x="http://placehold.it/200x200" data-2x="http://placehold.it/200x200" />
+# => <img src="http://placehold.it/100x100" data-1x="http://placehold.it/200x200" data-2x="http://placehold.it/200x200" />
 ```
 
 ## Contributing
