@@ -11,7 +11,7 @@ describe HisrcRails::ResponsiveImageTagHelper do
   end
 
   def data(_1x, _2x)
-    { data: { '1x' => _1x, '2x' => _2x }}.with_indifferent_access
+    { data: { :'1x' => _1x, :'2x' => _2x }}
   end
 
 

@@ -20,10 +20,9 @@ module HisrcRails
     #  responsive_image_tag("http://placehold.it/100x100", :'1x' => "http://placehold.it/200x200", :'2x' => "http://placehold.it/400x400") # =>
     #    <img src="http://placehold.it/100x100" data-1x="http://placehold.it/200x200" data-2x="http://placehold.it/200x200" />
     def responsive_image_tag(src, options = {})
-      options = options.with_indifferent_access if options.is_a?(Hash)
       options[:data] ||= {}
-      options[:data][:'1x'] ||= options.delete(:'1x').presence || path_to_image(src)
-      options[:data][:'2x'] ||= options.delete(:'2x').presence || path_to_image(src.gsub(/([\w\/]+).(\w+)/, '\1@2x.\2'))
+      options[:data][:'1x'] ||= path_to_image(options.delete(:'1x').presence || options.delete('1x').presence || src)
+      options[:data][:'2x'] ||= path_to_image(options.delete(:'2x').presence || options.delete('2x').presence || src.gsub(/([\w\/]+).(\w+)/, '\1@2x.\2'))
       
       image_tag(src, options)
     end
