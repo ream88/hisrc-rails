@@ -3,8 +3,8 @@
 Retina displays are coming! Be sure to make your Rails app ready today.
 
 How? Well, there are a lot of different approaches: 
-> http://css-tricks.com/which-responsive-images-solution-should-you-use/
-> http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/
+* http://css-tricks.com/which-responsive-images-solution-should-you-use/
+* http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/
 
 The one I like the most is [HiSRC](https://github.com/teleject/hisrc). This gem makes your live easier through two steps:
 
