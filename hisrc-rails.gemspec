@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name          = 'hisrc-rails'
-  gem.version       = '0.0.1'
+  gem.version       = '0.1.0'
   gem.authors       = 'Mario Uher'
   gem.email         = 'uher.mario@gmail.com'
   gem.description   = 'Make owners of the MacBook Pro with Retina Display happy and provide high-res images within your Rails app.'
