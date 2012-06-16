@@ -1,3 +1,6 @@
+require 'rails/railtie'
+require 'rails/engine'
+
 module HisrcRails
   class Railtie < Rails::Railtie
     initializer 'hisrc-rails.initialize' do
@@ -7,4 +10,6 @@ module HisrcRails
       end
     end
   end
+
+  class Engine < ::Rails::Engine; end
 end
