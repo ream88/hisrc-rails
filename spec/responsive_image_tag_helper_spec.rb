@@ -5,6 +5,8 @@ describe HisrcRails::ResponsiveImageTagHelper do
   let(:mock) do
     Class.new(MiniTest::Mock) do
       include HisrcRails::ResponsiveImageTagHelper
+      
+      def path_to_image(_) _ end
     end.new
   end
 
