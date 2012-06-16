@@ -58,7 +58,7 @@ responsive_image_tag("http://placehold.it/100x100", :'1x' => "http://placehold.i
 5. Create new Pull Request
 
 ## Acknowledgements
-Many thanks to @1Mark for his first version of HiSRC, and to @teleject for maintaining the current version of this really great jQuery plugin. :)
+Many thanks to [1Mark](https://github.com/1Marc) for [his first version](https://github.com/1Marc/hisrc) of HiSRC, and to [teleject](https://github.com/teleject) for maintaining the [current version](https://github.com/teleject/hisrc) of this really great jQuery plugin. :)
 
 ## Copyright
 
