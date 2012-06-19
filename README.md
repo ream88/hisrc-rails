@@ -1,4 +1,4 @@
-# hisrc-rails [![Build Status](https://secure.travis-ci.org/haihappen/hisrc-rails.png?branch=master)](http://travis-ci.org/haihappen/hisrc-rails)
+# hisrc-rails
 
 Retina displays are coming! Be sure to make your Rails app ready today.
 
