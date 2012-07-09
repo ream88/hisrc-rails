@@ -11,7 +11,7 @@ module HisrcRails
     # and two additional options as well:
     #
     # * <tt>:'1x'</tt> - If no 1x option is provided, the +src+ is used.
-    # * <tt>:'2x'</tt> - If no 2x options is provided, "@2x" is added to
+    # * <tt>:'2x'</tt> - If no 2x option is provided, "@2x" is inserted into
     # the +src+. So "rails.png" becomes "rails@2x.png".
     #
     # ==== Examples
