@@ -6,10 +6,10 @@ How? Well, there are a lot of different approaches:
 * http://css-tricks.com/which-responsive-images-solution-should-you-use/
 * http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/
 
-The one I like the most is [HiSRC](https://github.com/teleject/hisrc). This gem makes your live easier through two steps:
+The one I like the most is [HiSRC](https://github.com/teleject/hisrc). However I don't like stuffing JavaScript files into my `vendor/assets` folder, so I created this gem with following benefits:
 
-* It adds HiSRC to the Rails asset pipeline – no more messing around with javascript files.
-* It provides a helper method to easy include HiSRC in your Rails views.
+* It adds HiSRC to the Rails assets pipeline – no more messing around with javascript files (and a clean `vendor/assets` folder).
+* It provides a little helper method to include retina ready images in your Rails views.
 
 ## Installation
 
@@ -33,7 +33,7 @@ For detailed information about available configuration options be sure to checko
 
 ## Usage
 
-This gem provides a nice little helper method to optimize your views: `responsive_image_tag`
+This gem provides a nice little helper method to optimize your views for retina screens: `responsive_image_tag`
 
 `responsive_image_tag` accepts the same options as `image_tag`, and two additional options as well:
 
@@ -64,7 +64,7 @@ Many thanks to [1Mark](https://github.com/1Marc) for [his first version](https:/
 
 (The MIT license)
 
-Copyright (c) 2012 Mario Uher
+Copyright (c) 2012 - 2013 Mario Uher
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
