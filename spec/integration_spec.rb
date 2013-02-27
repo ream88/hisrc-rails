@@ -10,13 +10,13 @@ end
 
 describe ActionView::Base do
   it 'haz method' do
-    ActionView::Base.instance_methods.must_include(:responsive_image_tag)
+    ActionView::Base.instance_methods.must_include :responsive_image_tag
   end
 end
 
 
 describe ActionController::Base do
   it 'haz helper' do
-    ActionController::Base.helpers.methods.must_include(:responsive_image_tag)
+    ActionController::Base.helpers.methods.must_include :responsive_image_tag
   end
 end
