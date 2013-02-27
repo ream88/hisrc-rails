@@ -4,8 +4,8 @@ require 'hisrc-rails/railtie'
 require 'action_controller/railtie'
 
 class App < Rails::Application
-  config.active_support.deprecation = :log
-  new.initialize!
+  config.eager_load = true
+  initialize!
 end
 
 describe ActionView::Base do
