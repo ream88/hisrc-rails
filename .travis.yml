@@ -1,4 +1,25 @@
+language: ruby
+
 rvm:
   - 1.9.2
   - 1.9.3
+  - 2.0.0
   - ruby-head
+
+gemfile:
+  - Gemfile
+  - gemfiles/Rails_3_1.gemfile
+  - gemfiles/Rails_3_2.gemfile
+  - gemfiles/Rails_master.gemfile
+
+branches:
+  only:
+    - master
+
+matrix:
+  exclude:
+    - rvm: 1.9.2
+      gemfile: gemfiles/Rails_master.gemfile
+  allow_failures:
+    - rvm: ruby-head
+    - gemfile: gemfiles/Rails_master.gemfile

@@ -1,0 +1,12 @@
+source :rubygems
+
+gem 'activesupport', github: 'rails/rails'
+gem 'httparty'
+gem 'json'
+gem 'mail'
+
+group :development do
+  gem 'minitest'
+  gem 'rails', github: 'rails/rails'
+  gem 'webmock'
+end
