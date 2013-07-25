@@ -10,6 +10,7 @@ gemfile:
   - Gemfile
   - gemfiles/Rails_3_1.gemfile
   - gemfiles/Rails_3_2.gemfile
+  - gemfiles/Rails_4_0.gemfile
   - gemfiles/Rails_master.gemfile
 
 branches:
