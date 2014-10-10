@@ -1,5 +1,7 @@
 # hisrc-rails [![Build Status](https://travis-ci.org/haihappen/hisrc-rails.png?branch=master)](https://travis-ci.org/haihappen/hisrc-rails)
 
+**DEPRECATION NOTICE**: This gem is deprecated, please use [bower-rails](https://github.com/42dev/bower-rails) instead.
+
 Retina displays are coming! Be sure to make your Rails app ready today.
 
 How? Well, there are a lot of different approaches:
